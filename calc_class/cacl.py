@@ -4,8 +4,14 @@ window = Tk();
 window.title("kke")
 display = Entry(width = 45, bg = "light blue");
 display.grid(row = 1, column = 0);
+
+savedis = Entry(width = 45, bg = "light green");
+savedis.grid(row = 2, column =0);
+
 def cmd():
-    print("save");
+    text = display.get();
+    
+    savedis.insert(END,text);
 op = Frame(window);
 op.grid(row =3, column =0);
 Button(op, text = "click", width = 5, command = cmd).grid(row = 3, column = 3);
