@@ -12,3 +12,6 @@ class display:
         column = 0, sticky = self.sticky);
         self.entry = Entry(self.window, width = 20, bg = "light green").grid(
         row = self.row, column = self.column, sticky = W);
+
+    def insert(self, x):
+        self.entry.insert(x);
