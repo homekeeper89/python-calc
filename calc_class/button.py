@@ -26,5 +26,5 @@ class button:
                 r += 1;
 
     def click(self, x):
-        print(x, self.row);
-        print(self.output.entry);
+        print(self.output.row);
+        self.output.entry.insert(x);
