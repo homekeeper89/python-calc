@@ -11,3 +11,4 @@ class display():
     def make_Entry(self, row, col, width, color):
         display = Entry(self.tpfr, width = width, bg=color)
         display.grid(row = row, column = col);
+        return display;
